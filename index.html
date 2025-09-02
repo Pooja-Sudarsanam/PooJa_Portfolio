@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Favicon (Make sure this file exists in /Images/) -->
+        <link rel="icon" type="image/png"  href="Images/favicon.ico">
+        
+        <!-- Styles and FontAwesome -->
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/22af6e3359.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+
+    </head>
+    
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <div class="nav-left">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="resume.html" class="resume-link" target="_blank">Resume</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <img src="Images/Logo.png" class="logo">
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        </nav>        
+                        
+    </div>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Hey, I'm Pooja.<br> A Clinical Informatics Specialist</h1>
+            <p>A former Healthcare Provider turned Health Informatics Analyst passionate about advancing healthcare through data and AI</p>
+            <button class="cta-button" onclick="scrollToSection()">Explore More</button>
+        </div>
+        <div class="hero-image">
+            <img src="Images/background.png" alt="Pooja Priyadarshini Sudarsanam" >
+        </div>
+    </header>     
+</div>
+<section id="about">
+    <div class="container">
+        <!-- Left Image -->
+        <div class="about-img">
+            <img src="Images/order5.jpg" alt="Pooja Priyadarshini Sudarsanam">
+        </div>
+
+        <!-- Right Text -->
+        <div class="about-text">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+                I’m a <strong>Health Data Specialist</strong> with a passion for solving complex healthcare problems 
+                through <strong>technology and data-driven decision-making</strong>.
+            </p>
+            <p>
+                With <strong> nearly 5 years of experience</strong> across <strong> clinical informatics, digital health, and population health analytics</strong>, 
+                I specialize in transforming complex healthcare data into actionable insights <strong>optimize workflows</strong> to improve care quality anad operational efficiency 
+        
+            </p>
+            <p>
+                I have a <strong>Master’s in Health Informatics at Northeastern University</strong>, 
+                focusing on <strong>Health Data Analytics, Machine Learning/AI, and Health Information Management. I bring both technical expertise and first-hand clinical perspective!</strong>
+            </p>
+            <p>
+                My career has been an exciting mix of <strong>health, technology, and innovation</strong>, allowing me to work on 
+                <strong>Clinical Data, AI-driven solutions, health quality, cloud-enabled data solutions and closing care gaps</strong>.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<section id="skills-chart">
+    <h2 class="sub-title" style="text-align: center;">📊 My KPI's</h2>
+    <div class="skills-chart-container">
+      <!-- Legend on the left -->
+      <div class="chart-legend">
+        <ul>
+          <li><span class="legend-color pm"></span> Clinical Data Analysis</li>
+          <li><span class="legend-color ai"></span> AI/NLP in healthcare</li>
+          <li><span class="legend-color dev"></span> EHR Support Analysis</li>
+          <li><span class="legend-color bi"></span> Project Leadership</li>
+          <li><span class="legend-color ux"></span> Reduce provider burden</li>
+        </ul>
+      </div>
+  
+      <!-- Pie Chart -->
+      <canvas id="skillsPieChart" width="100" height="100"></canvas>
+    </div>
+  </section>
+
+  <!-- Combined Roadmap Section -->
+<section id="combined-roadmap">
+    <h2 class="sub-title">🗺️ My Roadmap</h2>
+    <div class="timeline-wrapper">
+      <div class="timeline-line"></div>
+  
+      <div class="milestone">
+        <div class="milestone-dot"></div>
+        <img src="Images/vtu.jpeg" alt="Rajiv Gandhi University of Health Sciences">
+        <h4>Rajiv Gandhi University of Health Sciences</h4>
+        <p>Bachelor of Dental Surgery</p>
+        <span>2015 – 2019</span>
+      </div>
+  
+      <div class="milestone">
+        <div class="milestone-dot"></div>
+        <img src="Images/dxc.png" alt="Rajarajeshwari Dental College & Hospital">
+        <h4>Rajarajeshwari Dental College & Hospital</h4>
+        <p>Dental Resident</p>
+        <span>2019 – 2020</span>
+      </div>
+  
+      <div class="milestone">
+        <div class="milestone-dot"></div>
+        <img src="Images/Infosys.png" alt="SP Dental Care">
+        <h4>SP Dental Care</h4>
+        <p>Clinical Informatics Specialist</p>
+        <span>2020 – 2022</span>
+      </div>
+  
+      
+      <div class="milestone">
+        <div class="milestone-dot"></div>
+        <img src="Images/uncc.jpeg" alt="Northeastern University">
+        <h4>Northeastern University</h4>
+        <p>Master's in Health Informatics</p>
+        <span>2023 – 2025</span>
+      </div>
+  
+      <div class="milestone">
+        <div class="milestone-dot"></div>
+        <img src="Images/cognizant.png" alt="South Boston Community Health Center">
+        <h4>South Boston Community Health Center</h4>
+        <p>Quality Improvement Data Analyst</p>
+        <span>2024 – Current</span>
+      </div>
+  
+    </div>
+  </section>
+  
+ <!-- Education Section -->
+<section id="education">
+    <div class="container">
+        <h1 class="sub-title">🎓 Education</h1>
+        <div class="grid-list">
+            <div class="grid-item">
+                <img src="Images/grad.jpg" alt="Cognizant Logo" class="company-logo">
+                <h2>🎓 Master’s in Health Informatics</h2>
+                <h4>Northeastern University</h4>
+                <p>GPA: 3.8 | Specializing in Health Data Analytics, Machine Learning/AI, and Health Information Management.</p>
+            </div>
+            <div class="grid-item">
+                <img src="Images/vtu.jpeg" alt="Cognizant Logo" class="company-logo">
+                <h2>🎓 Bachelor’s in Dental Surgery</h2>
+                <h4>Rajiv Gandhi University of Health Sciences</h4>
+                <p>GPA: 3.6 | Focused on Dental Surgery,treatment planning and improving patient outcomes.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Experience Section -->
+<section id="experience">
+    <div class="container">
+        <h1 class="sub-title">💼 Experience</h1>
+        <div class="grid-list">
+            <div class="grid-item">
+                <img src="Images/cognizant.png" alt="South Boston Community Health Center" class="company-logo">
+                <h2>🚀 Quality Improvement Data Analyst</h2>
+                <h4>Jan 2024 – Current</h4>
+                <p>At SBCHC, I analyse EHR and claims data, standardise it to medical terminologies and build AI-enabled dashboards and NLP workflows to close care gaps and improve population health outcomes. 
+                    </p>
+            </div>
+            <div class="grid-item">
+                <img src="Images/Infosys.png" alt="Infosys Logo" class="company-logo">
+                <h2>💡 Clinical Informatics Specialist</h2>
+                <h4>Nov 2020 - Dec 2023</h4>
+                <p>Co-led the development of a dental EHR system, structures and annotated clinical notes and standardised workflows to improve documentation accuracy and patient outcomes.</p>
+            </div>
+            <div class="grid-item">
+                <img src="Images/dxc.png" alt="Rajarajeshwari Dental College & Hospital" class="company-logo">
+                <h2>🌍 Dental Resident</h2>
+                <h4>Sept 2019 - Sept 2020</h4>
+                <p>As a dental resident, I conducted research on AI-assisted implant planning, structured clinical documentation, and improved treatment tracking to enhance decision making in patient care.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Graduate Teaching Assistant Section -->
+<section id="gta">
+    <div class="gta-container">
+        <!-- Left Side: Image -->
+        <div class="gta-image">
+            <img src="Images/grad1.jpg" alt="Sneha Shivanna">
+        </div>
+
+        <!-- Right Side: GTA Content -->
+        <div class="gta-text">
+            <h2 class="sub-title">🎓 Graduate Teaching Assistant</h2>
+            <p class="gta-description">
+                Supporting graduate and undergraduate students by teaching <strong>Engineering Decision Analysis</strong> and <strong>Production Control Systems</strong>.
+                Passionate about helping students grasp core concepts and apply them in real-world scenarios.
+            </p>
+            <div class="gta-item">
+                <h3>UNC Charlotte | Aug 2024 - Present</h3>
+                <div class="gta-responsibilities">
+                    <p>📌 Assisting in teaching Risk & Decision Analysis and Production Control Systems.</p>
+                    <p>🎯 Facilitating student engagement by guiding assignments and projects.</p>
+                    <p>📖 Developing instructional materials to support course objectives.</p>
+                    <p>💡 Conducting office hours to support student learning and address queries.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<div id="certifications">
+    <div class="container">
+        <h1 class="sub-title">🎓 Certifications</h1>
+        <div class="certifications-list">
+            <div class="cert-item">
+                <img src="Images/CSPO.png" alt="AWS Certification">
+                <h2>Certified Scrum Product Owner</h2>
+                <p>Issued By Scrum Alliance</p>
+                <a href="https://bcert.me/syetupfdv" target="_blank">View Certification</a>
+            </div>
+            <div class="cert-item">
+                <img src="Images/IBM.jpeg" alt="IBM Data Science">
+                <h2>IBM Data Analyst Professional Certificate</h2>
+                <p>Issued By IBM via Coursera</p>
+                <a href="https://www.coursera.org/account/accomplishments/professional-cert/H7Y8F3SHTCFZ" target="_blank">View Certification</a>
+            </div>
+            <div class="cert-item">
+                <img src="Images/JPM.png" alt="Six Sigma">
+                <h2>JP Morgan and Chase Excel Simulation</h2>
+                <p>Issued By Forage</p>
+                <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/JPMorgan Chase Corporate/XiuvjcwqWRqH9oy38_JPMorgan Chase & Co._ZvQwNwsRuzqNwy56v_1697840006967_completion_certificate.pdf" target="_blank">View Certification</a>
+            </div>
+           
+        </div>
+    </div>
+</div>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/worl-1.jpg">
+                <div class="layer">
+                    <h3>Last-Mile Delivery Enhancement</h3>
+                    <p style="font-size: 12px;">Why is Last mile communication still broken ? 
+                    </p>
+                    <a href ="https://github.com/sneh6677/Blue-Dart.git"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/Capstoneh1.jpeg">
+                <div class="layer">
+                    <h3>Cardio Vascular Disease Prediction through Machine Learning</h3>
+                    <p style="font-size: 12px;">Supervised Learning MOdels: K-Nearest Neighbors, Logistic Regression, Support Vector Machine, Decision Trees,
+                        Random Forest Technique
+                    </p>
+                    <a href ="https://github.com/sneh6677/Final_Capstone_Project/blob/main/CVD_Capstone.ipynb"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/COVID-19.png">
+                <div class="layer">
+                    <h3>Covid-19 Data Analysis </h3>
+                    <p style="font-size: 12px;">Basic Data Analysis on Covid Death and Positive cases worldwide</p>
+                    <a href ="https://github.com/sneh6677/Covid19_DataAnalysis"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work-4.jpg">
+                <div class="layer">
+                    <h3>Marinero Beach equipment Optmization</h3>
+                    <p>In Progress</p>
+                    <a href ="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work-5.jpg">
+                <div class="layer">
+                    <h3>ABC</h3>
+                    <p>In Progress</p>
+                    <a href ="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- Freelance Project Section -->
+<section id="freelance">
+    <div class="container">
+        <h1 class="freelance-title">
+            🦷 Smiles, Sprints, and Software: <span>My Freelance Journey</span> 
+          </h1>          
+      <div class="freelance-container">
+        <div class="freelance-image">
+          <img src="Images/Poo.JPG" alt="SP Dental Care Project">
+        </div>
+        <div class="freelance-text">
+          <h2>SP Dental Care – A Patient-Centric Dental App</h2>
+          <p>
+            Partnered with <strong>Dr. Pooja Priyadarshini Sudarsanam</strong> to conceptualize, design, and build a custom software solution for <strong>SP Dental Care</strong> tailored for streamlining clinic operations and improving patient engagement in a dental practice setting.
+            Our collaboration was grounded in mutual strengths: she provided deep domain expertise and operational insights, while I brought technical proficiency and product vision. Together, we identified core pain points in appointment scheduling, patient tracking, and membership differentiation, and transformed them into a user-friendly digital experience.
+             <strong>🔧 My contributions included: </strong>
+                Leading the end-to-end product development lifecycle, from requirements gathering to MVP planning and feature roadmap definition.
+                Engineering a seamless web-based platform that enabled patients to:
+                    📅 Self-schedule appointments online
+                    📈 Track their visit history and upcoming consultations
+                    🌟 Access custom experiences based on their premium or regular membership tier
+                I contributed across the product lifecycle — from MVP planning and technical architecture to feature implementation and deployment — showcasing a balanced blend of product ownership and engineering execution.
+          </p>
+          <p>
+            To extend the app’s impact, I facilitated its transition to another clinic, where it was later adapted to new requirements.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Balance & Harmony Section -->
+<section id="wellness">
+    <div class="wellness-container">
+        <!-- Left Side: Text + Yoga Image -->
+        <div class="wellness-text-container">
+            <div class="wellness-text">
+                <h2 class="sub-title">🌿 Balance & Harmony</h2>
+                <p>
+                    Finding balance through <strong>yoga, mindfulness, and companionship</strong>. 
+                    Wellness is not just about movement but also about the joy of being present, whether on the yoga mat 
+                    or spending time with a furry friend. I embrace self-care as a way to enhance creativity, focus, and happiness in life.
+                </p>
+            </div>
+            <!-- Yoga Image -->
+            <div class="yoga-image">
+                <img src="Images/yoga.jpeg" alt="Yoga Practice">
+            </div>
+        </div>
+
+        <!-- Bottom: Three Images (Pets & Wellness) -->
+        <div class="wellness-images">
+            <img src="Images/dog1.jpeg" alt="Time with My Dog">
+            <img src="Images/dragon.JPG" alt="Meditation">
+            <img src="Images/dog3.jpg" alt="Playful Dog Moment">
+        </div>
+    </div>
+</section>
+
+
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i>sshivannasneha@gmail.com</p>
+                <p><i class="fa-solid fa-mobile-screen"></i>+13097135640</p>
+                <div class="social-media">
+                  <a href ="https://www.linkedin.com/in/snehashivanna"><i class="fa-brands fa-linkedin"></i></a>  
+                  <a href =""><i class="fa-brands fa-instagram"></i></a> 
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type ="email" name ="email" placeholder="Your email Id" required>
+                    <textarea name ="Message" rows ="6" placeholder="Your Message"></textarea> 
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>No rights to copy <i class="fa-regular fa-face-grin-tongue-wink"></i></p>
+    </div>
+</div>
+
+<script>
+    
+    function showTab(tabId) {
+    // Hide all content sections
+    document.querySelectorAll(".content").forEach(content => {
+        content.classList.remove("active");
+    });
+
+    // Show the selected section
+    document.getElementById(tabId).classList.add("active");
+}
+
+</script>
+<script>
+    function scrollToSection() {
+        document.getElementById("freelance").scrollIntoView({
+            behavior: "smooth"
+        });
+    }
+</script>
+<script>
+    const ctx = document.getElementById('skillsPieChart').getContext('2d');
+    const data = {
+      labels: [
+        'Clinical Data Analysis',
+        'AI/NLP in Healthcare',
+        'EHR Support Analysis',
+        'Project Leadership',
+        'Reduce Provider Burden'
+      ],
+      datasets: [{
+        data: [40, 20, 15, 10, 15],
+        backgroundColor: [
+          '#4CAF50', // Product Management
+          '#FF9800', // AI/ML
+          '#2196F3', // Software Development
+          '#9C27B0', // Business Intelligence
+          '#FFC107'  // Market Research & UI/UX Design
+        ],
+        borderWidth: 1
+      }]
+    };
+  
+    const config = {
+      type: 'pie',
+      data: data,
+      options: {
+        plugins: {
+          datalabels: {
+            color: '#fff',
+            font: {
+              weight: 'bold',
+              size: 16
+            },
+            formatter: (value, context) => {
+              let total = context.chart._metasets[0].total;
+              let percentage = (value / total * 100).toFixed(0);
+              return percentage + '%';
+            }
+          },
+          legend: {
+            display: false // Hide Chart.js built-in legend (you already have a custom one)
+          }
+        }
+      },
+      plugins: [ChartDataLabels]
+    };
+  
+    new Chart(ctx, config);
+  </script>
+  
+
+<script>
+    var sidemenuI = document.getElementById(sidemenu);
+
+    function openmenu(){
+        sidemenuI.style.right="0";
+    }
+    function closemenu(){
+        sidemenuI.style.right="-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwh5Wh6ttxsqCfLlRvthtGE2GuvlynBhezpNVVTAV19Sjh5iYni3hn3YEtYWYsWepmK/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Thank You!"
+            setTimeout(function(){
+                msg.innerHTML = " "
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+<script>
+    function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+        );
+    }
+
+    function handleScroll() {
+        document.querySelectorAll(".portfolio").forEach(project => {
+            if (isInViewport(project)) {
+                project.classList.add("visible");
+            }
+        });
+    }
+
+    window.addEventListener("scroll", handleScroll);
+    document.addEventListener("DOMContentLoaded", handleScroll);
+</script>
+<script>
+    function toggleMenu() {
+        let navList = document.querySelector("nav ul");
+        navList.classList.toggle("active");
+    }
+</script>
+
+
+</body>
+</html>
